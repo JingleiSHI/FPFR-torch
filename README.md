@@ -15,13 +15,10 @@ pytorch==
 ## Citation
 Please consider citing our work if you find it useful.
 ```
-@article{shi2019depth,
-    title={A Framework for Learning Depth From a Flexible Subset of Dense and Sparse Light Field Views},
+@inproceedings{shi2020learning,
+    title={Learning Fused Pixel and Feature-based View Reconstructions for Light Fields},
     author={Jinglei Shi and Xiaoran Jiang and Christine Guillemot},
-    journal=TIP,
-    volume={28},
-    number={12},
-    pages={5867-5880},
-    month={Dec},
-    year={2019}}
+    booktitle={IEEE. International Conference on Computer Vision and Pattern Recognition (CVPR)},
+    pages={2555--2564},
+    year={2020}}
 ```
