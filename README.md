@@ -14,10 +14,13 @@ pytorch==
 ## Examples
 ### Preparation of the dataset
 Before training the network, the preparation of the dataset is as follows:
-- Create a folder containing all light fields in the trainset, and each light field is an individual folder, with all sub-apterture images named 'lf_row_column.png', where 'row' and 'column' are row and column indices.
-- 
+- Create a folder containing all light fields used for training and validation, and each light field is an individual folder, with all sub-apterture images named 'lf_row_column.png', where 'row' and 'column' are row and column indices.
+- Create .txt files and add the names of the light field into them. A 'tri_trainslit.txt' for training set and a 'tri_testlist.txt' for test set.
 
 ### Training
+Before launching the training, we should adapt the configuration (Line 12 - Line 30) of the file 'train.py' as follows:
+- 
+
 ### Evaluation
 
 ## Citation
