@@ -13,6 +13,9 @@ pytorch==
 ```
 ## Examples
 ### Preparation of the dataset
+Before training the network, the preparation of the dataset is as follows:
+- Create a folder containing all light fields in the trainset, and each light field is an individual folder, with all sub-apterture images named 'lf_row_column.png', where 'row' and 'column' are row and column indices.
+- 
 
 ### Training
 ### Evaluation
