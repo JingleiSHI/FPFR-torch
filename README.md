@@ -25,7 +25,7 @@ Before launching the training, we should adapt the configuration (Line 12 - Line
 - train_ratio & val_ratio: Proportions of light fields involved in the training and validation (default value for both is 1).
 - Dim: Angular resolution for light fields (default value 9).
 - Min_len: Minimal distance between corner views, for example, if Min_len=7 and Dim=9, subsets of light field in 7x7, 8x8 and 9x9 patterns will be used.
-- 
+- test_frequency: The number 
 
 ### Evaluation
 
