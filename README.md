@@ -8,8 +8,8 @@ By [Jinglei Shi](https://jingleishi.github.io/),  [Xiaoran Jiang](https://schola
 
 ## Dependencies
 ```
-python==3.x
-pytorch==
+python==3.8
+pytorch==1.11.0
 ```
 ## Examples
 ### Preparation of the dataset
