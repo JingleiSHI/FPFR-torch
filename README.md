@@ -10,6 +10,7 @@ By [Jinglei Shi](https://jingleishi.github.io/),  [Xiaoran Jiang](https://schola
 ```
 python==3.8
 pytorch==1.11.0
+torchvision==0.12.0
 ```
 ## Examples
 ### Preparation of the dataset
