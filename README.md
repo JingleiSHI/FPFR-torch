@@ -18,25 +18,39 @@ Before training the network, the preparation of the dataset is as follows:
 - Create .txt files and add the names of the light field into them. A 'tri_trainslit.txt' for training set and a 'tri_testlist.txt' for test set.
 
 ### Training
-Before launching the training, we should adapt the configuration (Line 12 - Line 30) of the file 'train.py' as follows:
-- train_list & val_list: Path to the files 'tri_trainlist.txt' and 'tri_testlist.txt'.
-- train_batchsize & val_batchsize: Batch size for training and validation (default values for training is 4, for validation is 1).
-- train_patchsize & val_patchsize: Patch size for training and validation (default values for training is [160,160], for validation is [768,768]).
-- train_ratio & val_ratio: Proportions of light fields involved in the training and validation (default value for both is 1).
-- Dim: Angular resolution for light fields (default value 9).
-- Min_len: Minimal distance between corner views, for example, if Min_len=7 and Dim=9, subsets of light field in 7x7, 8x8 and 9x9 patterns will be used.
-- test_frequency: The number of epoch to pass before testing.
-- save_frequency: The number of epoch to pass before saving the trained model.
-- version_dir: Path to the folder which stores the trained models and learning curves.
-- best_dir: Path to the saved best model.
-- regular_dir: Path to the saved regular model.
+Before launching the training, we should adapt the configuration (Lines 12 - 30) of the file 'train.py' as follows:
+- *train_list* & *val_list*: Path to the files 'tri_trainlist.txt' and 'tri_testlist.txt'.
+- *train_batchsize* & *val_batchsize*: Batch size for training and validation (default values for training is 4, for validation is 1).
+- *train_patchsize* & *val_patchsize*: Patch size for training and validation (default values for training is [160,160], for validation is [768,768]).
+- *train_ratio* & *val_ratio*: Proportions of light fields involved in the training and validation (default value for both is 1).
+- *Dim*: Angular resolution for light fields (default value 9).
+- *Min_len*: Minimal distance between corner views, for example, if Min_len=7 and Dim=9, subsets of light field in 7x7, 8x8 and 9x9 patterns will be used.
+- *test_frequency*: The number of epoch to pass before testing.
+- *save_frequency*: The number of epoch to pass before saving the trained model.
+- *version_dir*: Path to the folder which stores the trained models and learning curves.
+- *best_dir*: Path to the saved best model.
+- *regular_dir*: Path to the saved regular model.
 
-After configurating all settings, users can simply launch the training by:
+After configuring all settings, users can simply launch the training by:
 ```
 python train.py
 ```
 
 ### Evaluation
+To synthesize dense light fields with given corner views, users should adapt the configuration (Lines 12-19) of the file 'test.py' as follows:
+- *data_folder*: Path to the folder containing four corner views.
+- *result_folder*: Path to the folder containing synthesized sub-aperture views.
+- *model_path*: Path to the trained model.
+- *lt*, *rt*, *lb*, *rb*: Four corner views.
+- *D*: Distance between corner views, for example, to synthesize a 9x9 light field, D should be set 8.
+
+After configuring the above settings, users can launch the test by:
+```
+python test.py
+```
+
+### Pretrained Models
+
 
 ## Citation
 Please consider citing our work if you find it useful.
