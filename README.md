@@ -1,6 +1,6 @@
 # FPFR2
 
-This is the repository of the paper "__Learning Fused Pixel and Feature-Based View Reconstructions for Light Fields__"  (__CVPR 2020 Oral__).
+This is the pytorch implemention of our paper "__Learning Fused Pixel and Feature-Based View Reconstructions for Light Fields__"  (__CVPR 2020 Oral__).
 
 By [Jinglei Shi](https://jingleishi.github.io/),  [Xiaoran Jiang](https://scholar.google.com/citations?hl=zh-CN&user=zvdY0EcAAAAJ&view_op=list_works&sortby=pubdate)  and  [Christine Guillemot](https://people.rennes.inria.fr/Christine.Guillemot/)
 
@@ -50,7 +50,7 @@ python test.py
 ```
 
 ### Pretrained Models
-We provide three models respectively pretrained on HCI LF dataset ([synth.pkl](https://pan.baidu.com/s/1ZAIttST3AliL87-0y3RMmQ?pwd=0003)), UCSD LF dataset ([realworld.pkl](https://pan.baidu.com/s/1Y2rfeUa6F-PW7UgTuhWoew?pwd=0004)) and EPFL LF dataset ([epfl.pkl](https://pan.baidu.com/s/1SkwXVK3uoIUvC9wj0Q2onQ?pwd=0002)), users can just download them and put them into the folder 'models'.
+We provide three models respectively pretrained on HCI LF dataset ([synth.pkl](https://pan.baidu.com/s/1ZAIttST3AliL87-0y3RMmQ?pwd=0003)), UCSD LF dataset ([realworld.pkl](https://pan.baidu.com/s/1Y2rfeUa6F-PW7UgTuhWoew?pwd=0004)) and EPFL LF dataset ([epfl.pkl](https://pan.baidu.com/s/1SkwXVK3uoIUvC9wj0Q2onQ?pwd=0002)), users can just download them and put them into the folder 'saved_model'.
 
 
 ## Citation
