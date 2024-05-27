@@ -50,6 +50,7 @@ python test.py
 ```
 
 ### Pretrained Models
+We provide three models respectively pretrained on HCI LF dataset ([synth.pkl](https://pan.baidu.com/s/1ZAIttST3AliL87-0y3RMmQ?pwd=0003)), UCSD LF dataset ([realworld.pkl](https://pan.baidu.com/s/1Y2rfeUa6F-PW7UgTuhWoew?pwd=0004)) and EPFL LF dataset ([epfl.pkl](https://pan.baidu.com/s/1SkwXVK3uoIUvC9wj0Q2onQ?pwd=0002)), users can just download them and put them into the folder 'models'.
 
 
 ## Citation
