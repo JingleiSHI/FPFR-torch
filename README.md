@@ -1,4 +1,4 @@
-# FPFR2
+# FPFR-torch
 
 This is the pytorch implemention of our paper "__Learning Fused Pixel and Feature-Based View Reconstructions for Light Fields__"  (__CVPR 2020 Oral__).
 
